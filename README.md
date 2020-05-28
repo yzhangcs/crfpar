@@ -7,8 +7,9 @@
 
 Source code for ACL'20 paper ["Efficient Second-Order TreeCRF for Neural Dependency Parsing"](https://arxiv.org/abs/2005.00975) and IJCAI'20 paper ["Fast and Accurate Neural CRF Constituency Parsing"](https://www.ijcai.org/proceedings/2020/5156.pdf).
 
-## References
+## Citation
 
+If you are interested in our researches, please cite:
 ```
 @inproceedings{zhang-etal-2020-efficient,
   title     = {Efficient Second-Order {TreeCRF} for Neural Dependency Parsing},
@@ -25,4 +26,4 @@ Source code for ACL'20 paper ["Efficient Second-Order TreeCRF for Neural Depende
 }
 ```
 
-Please feel free to contact me via [email](mailto:yzhang.cs@outlook.com) if you have any issues.
+Please feel free to email [me](mailto:yzhang.cs@outlook.com) if you have any issues.
