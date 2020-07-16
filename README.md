@@ -7,6 +7,8 @@
 
 Source code for ACL'20 paper ["Efficient Second-Order TreeCRF for Neural Dependency Parsing"](https://www.aclweb.org/anthology/2020.acl-main.302/) and IJCAI'20 paper ["Fast and Accurate Neural CRF Constituency Parsing"](https://www.ijcai.org/Proceedings/2020/560).
 
+The code of ACL'20 paper (Cʀꜰ2o is not ported yet) and IJCAI'20 paper is available at the [`crf-dependency`](https://github.com/yzhangcs/crfpar/tree/crf-dependency) branch and [`crf-dependency`](https://github.com/yzhangcs/crfpar/tree/crf-constituency) branch respectively.
+
 Currently I'm working to release a python package named `supar`, including pretrained models for my papers.
 The code is unstable and not imported to this repo yet.
 If you would like to try them out in advance, please refer to my another repository [parser](https://github.com/yzhangcs/parser/tree/release).
