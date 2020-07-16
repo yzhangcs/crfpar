@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/yzhangcs/crfpar.svg)](https://github.com/yzhangcs/crfpar/stargazers)		
 [![GitHub forks](https://img.shields.io/github/forks/yzhangcs/crfpar.svg)](https://github.com/yzhangcs/crfpar/network/members)
 
-Source code for ACL'20 paper ["Efficient Second-Order TreeCRF for Neural Dependency Parsing"](https://arxiv.org/abs/2005.00975) and IJCAI'20 paper ["Fast and Accurate Neural CRF Constituency Parsing"](https://www.ijcai.org/proceedings/2020/5156.pdf).
+Source code for ACL'20 paper ["Efficient Second-Order TreeCRF for Neural Dependency Parsing"](https://www.aclweb.org/anthology/2020.acl-main.302/) and IJCAI'20 paper ["Fast and Accurate Neural CRF Constituency Parsing"](https://www.ijcai.org/Proceedings/2020/560).
 
 Currently I'm working to release a python package named `supar`, including pretrained models for my papers.
 The code is unstable and not imported to this repo yet.
