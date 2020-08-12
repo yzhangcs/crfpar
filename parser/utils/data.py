@@ -46,7 +46,7 @@ class TextDataset(Dataset):
                     field.name,
                     field.transform(getattr(corpus, field.name)))
         # NOTE: the final bucket count is roughly equal to n_buckets
-        self.lengths = [len(i) + sum([bool(field.bos), bool(field.bos)])
+        self.lengths = [len(i) + sum([bool(field.bos), bool(field.eos)])
                         for i in corpus]
         self.buckets = dict(zip(*kmeans(self.lengths, n_buckets)))
 

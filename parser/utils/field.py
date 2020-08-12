@@ -57,8 +57,8 @@ class Field(RawField):
             params.append(f"lower={self.lower}")
         if not self.use_vocab:
             params.append(f"use_vocab={self.use_vocab}")
-        s += f", ".join(params)
-        s += f")"
+        s += ", ".join(params)
+        s += ")"
 
         return s
 
