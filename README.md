@@ -11,7 +11,7 @@ The code of ACL'20 paper (Cʀꜰ2o is not ported yet) and IJCAI'20 paper is avai
 
 Currently I'm working to release a python package named `supar`, including pretrained models for my papers.
 The code is unstable and not imported to this repo yet.
-If you would like to try them out in advance, please refer to my another repository [parser](https://github.com/yzhangcs/parser/tree/release).
+If you would like to try them out in advance, please refer to my another repository [parser](https://github.com/yzhangcs/parser).
 
 ## Citation
 
