@@ -2,11 +2,11 @@
 
 from parser.modules import CHAR_LSTM, MLP, BertEmbedding, Biaffine, BiLSTM
 from parser.modules.dropout import IndependentDropout, SharedDropout
+from parser.utils.fn import pad
 
 import torch
 import torch.nn as nn
-from torch.nn.utils.rnn import (pack_padded_sequence, pad_packed_sequence,
-                                pad_sequence)
+from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 
 class Model(nn.Module):
@@ -85,7 +85,7 @@ class Model(nn.Module):
             word_embed += self.pretrained(words)
         if self.args.feat == 'char':
             feat_embed = self.feat_embed(feats[mask])
-            feat_embed = pad_sequence(feat_embed.split(lens.tolist()), True)
+            feat_embed = pad(feat_embed.split(lens.tolist()), total_length=seq_len)
         elif self.args.feat == 'bert':
             feat_embed = self.feat_embed(*feats)
         else:
