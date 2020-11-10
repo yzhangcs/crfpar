@@ -24,7 +24,7 @@ class Field(object):
                          if token is not None]
 
     def __repr__(self):
-        s, params = f"({self.name}): {self.__class__.__name__}(", []
+        params = []
         if self.pad is not None:
             params.append(f"pad={self.pad}")
         if self.unk is not None:
@@ -37,10 +37,7 @@ class Field(object):
             params.append(f"lower={self.lower}")
         if not self.use_vocab:
             params.append(f"use_vocab={self.use_vocab}")
-        s += f", ".join(params)
-        s += f")"
-
-        return s
+        return f"({self.name}): {self.__class__.__name__}({', '.join(params)})"
 
     @property
     def pad_index(self):

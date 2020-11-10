@@ -173,8 +173,8 @@ class CMD(object):
         # prevent self-loops
         arc_scores.diagonal(0, 1, 2).fill_(float('-inf'))
         arc_preds = arc_scores.argmax(-1)
-        bad = [not istree(sequence[:l+1], self.args.proj)
-               for l, sequence in zip(lens.tolist(), arc_preds.tolist())]
+        bad = [not istree(sequence[:i+1], self.args.proj)
+               for i, sequence in zip(lens.tolist(), arc_preds.tolist())]
         if self.args.tree and any(bad):
             arc_preds[bad] = eisner(arc_scores[bad], mask[bad])
         rel_preds = rel_scores.argmax(-1)

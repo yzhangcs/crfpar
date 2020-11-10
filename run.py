@@ -55,7 +55,7 @@ if __name__ == '__main__':
     args.model = os.path.join(args.file, 'model')
     args.device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-    print(f"Override the default configs with parsed arguments")
+    print("Override the default configs with parsed arguments")
     args = Config(args.conf).update(vars(args))
     print(args)
 
